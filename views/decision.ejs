@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <head>
+        <h1>Authorization Box</h1>
+    </head>
+    <body>
+        <p1>Hi! <%= client.name %></p1>
+        <p1>is requesting access to your account</p1>
+        <form action="/decision" method="POST">
+            <input type="text" id="transaction_id" type="hidden" value="" />
+            <input type="submit" value="Allow" id="allow" />
+            <input type="submit" value="Deny" id="deny" />
+        </form>
+    </body>
+</html>

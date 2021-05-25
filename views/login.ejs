@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>login</title>
+    <head>
+        <meta charset="UTF-8" />
+        <head>
+            <h1>Login</h1>
+        </head>
+        <body>
+            <form action="/oauth/authorization" method="POST">
+                <label id="username">
+                    <input id="username" type="text" placeholder="username" />
+                </label>
+                <label id="password">
+                    <input id="password" type="password" placeholder="password" />
+                </label>
+                <input id="clientId" type="hidden" value="#{clientId}" name="clientId" />
+                <input id="redirectUri" type="hidden" value="#{redirectUri}" name="redirectUri" />
+                <input id="responseType" type="hidden" value="#{responseType}" name="responseType" />
+                <input type="submit" value="Login" />
+            </form>
+        </body>
+    </head>
+</html>
